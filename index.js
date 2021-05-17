@@ -139,7 +139,7 @@ setInterval(function() {
         console.log(`${moment()} it's sleepy time, skipping`);
     }
 
-    axios.get('api-hanger.herokuapp.com:' + process.env.PORT)
+    axios.get('api-hanger.herokuapp.com')
     .then(function (response) {
         console.log(response);
       })
