@@ -24,8 +24,8 @@ let app = http.createServer((req, res) => {
 });
 
 // Start the server on port 3000
-app.listen(3000, '127.0.0.1');
-console.log('Node server running on port 3000');
+app.listen(process.env.PORT, '127.0.0.1');
+console.log('Node server running on port ' + process.env.PORT);
 
 async function checkBookings(yearMonth) {
     console.log(`${moment()} checking ${yearMonth}`);
@@ -139,7 +139,7 @@ setInterval(function() {
         console.log(`${moment()} it's sleepy time, skipping`);
     }
 
-    axios.get('api-hanger.herokuapp.com:3000')
+    axios.get('api-hanger.herokuapp.com:' + process.env.PORT)
     .then(function (response) {
         console.log(response);
       })
