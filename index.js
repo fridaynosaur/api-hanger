@@ -1,3 +1,4 @@
+const http = require('http');
 const _ = require('lodash');
 const moment = require('moment');
 const { exec } = require('child_process');
@@ -12,6 +13,19 @@ let push = new Pushover({
     token: process.env.PUSHOVER_TOKEN,
     user: process.env.PUSHOVER_USER
 });
+
+// Create an instance of the http server to handle HTTP requests
+let app = http.createServer((req, res) => {
+    // Set a response type of plain text for the response
+    res.writeHead(200, {'Content-Type': 'text/plain'});
+
+    // Send back a response and end the connection
+    res.end('Hi from api-hanger!\n');
+});
+
+// Start the server on port 3000
+app.listen(3000, '127.0.0.1');
+console.log('Node server running on port 3000');
 
 async function checkBookings(yearMonth) {
     console.log(`${moment()} checking ${yearMonth}`);
@@ -124,8 +138,17 @@ setInterval(function() {
     } else {
         console.log(`${moment()} it's sleepy time, skipping`);
     }
+
+    axios.get('api-hanger.herokuapp.com:3000')
+    .then(function (response) {
+        console.log(response);
+      })
+    .catch(function (error) {
+        console.log('no response from keepalive');
+    })
 }, 5*60*1000);
 
 console.log(`${moment()} Checking Cliffhanger for bookings. Interval is 5 minutes.`);
 
 test();
+
