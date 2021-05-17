@@ -108,6 +108,14 @@ function test() {
     checkBookings(curYearMonth);
     checkBookings(nextYearMonth);
     pushNotification("test", "test", "test");
+
+    axios.get('http://api-hanger.herokuapp.com')
+    .then(function (response) {
+        console.log('keepalive: ' + response.data);
+      })
+    .catch(function (error) {
+        console.log('keepalive error: ' + error.message);
+    });
     /*console.log(`${moment()} self-test`);
     const testResponse = require('./testResponse.json');
     const testResponse2 = require('./testResponse2.json');
@@ -139,13 +147,13 @@ setInterval(function() {
         console.log(`${moment()} it's sleepy time, skipping`);
     }
 
-    axios.get('api-hanger.herokuapp.com')
+    axios.get('http://api-hanger.herokuapp.com')
     .then(function (response) {
-        console.log(response);
+        console.log('keepalive: ' + response.data);
       })
     .catch(function (error) {
-        console.log('no response from keepalive');
-    })
+        console.log('keepalive error: ' + error.message);
+    });
 }, 5*60*1000);
 
 console.log(`${moment()} Checking Cliffhanger for bookings. Interval is 5 minutes.`);
