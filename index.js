@@ -24,7 +24,7 @@ let app = http.createServer((req, res) => {
 });
 
 // Start the server on port 3000
-app.listen(process.env.PORT, '127.0.0.1');
+app.listen(process.env.PORT);
 console.log('Node server running on port ' + process.env.PORT);
 
 async function checkBookings(yearMonth) {
