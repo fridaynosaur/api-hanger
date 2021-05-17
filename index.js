@@ -1,6 +1,6 @@
 const http = require('http');
 const _ = require('lodash');
-const moment = require('moment');
+const moment = require('moment-timezone');
 const { exec } = require('child_process');
 const axios = require('axios');
 const Pushover = require('pushover-notifications');
@@ -49,7 +49,7 @@ function parseResponse(response) {
         const date = moment(dateString);
         const isWeekend = (date.weekday() === 6) || (date.weekday() === 0);
 
-        if (date.isBefore(moment().startOf('day'))) continue;
+        if (date.isBefore(moment().tz('America/Vancouver').startOf('day'))) continue;
         if (isWeekend) continue;
 
         for (const timeString in response.calendar[dateString]) {
@@ -140,7 +140,7 @@ setInterval(function() {
     const curYearMonth = moment().format('YYYY-MM');
     const nextYearMonth = moment().add(1, 'M').format('YYYY-MM');
 
-    if (moment().hours() >= 7 && moment().hours() <= 21) {
+    if (moment().tz('America/Vancouver').hours() >= 7 && moment().tz('America/Vancouver').hours() <= 21) {
         checkBookings(curYearMonth);
         checkBookings(nextYearMonth);
     } else {
