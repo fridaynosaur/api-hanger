@@ -1,0 +1,236 @@
+{
+  "calendar": {
+    "2021-03-01": {
+      "08:30:00": {
+        "31230": {
+          "event_id": 31230,
+          "open": 34,
+          "placeholder": false,
+          "session_id": "mbc",
+          "size": 12
+        }
+      },
+      "10:45:00": {
+        "31231": {
+          "event_id": 31231,
+          "open": 27,
+          "placeholder": false,
+          "session_id": "mbc",
+          "size": 11
+        }
+      },
+      "13:00:00": {
+        "31233": {
+          "event_id": 31233,
+          "open": 29,
+          "placeholder": false,
+          "session_id": "mbc",
+          "size": 9
+        }
+      },
+      "15:30:00": {
+        "31235": {
+          "event_id": 31235,
+          "open": -3,
+          "placeholder": false,
+          "session_id": "mbc",
+          "size": 29
+        }
+      },
+      "18:00:00": {
+        "31237": {
+          "event_id": 31237,
+          "open": 0,
+          "placeholder": false,
+          "session_id": "mbc",
+          "size": 0
+        }
+      }
+    },
+    "2021-03-02": {
+      "10:30:00": {
+        "31239": {
+          "event_id": 31239,
+          "open": 2,
+          "placeholder": false,
+          "session_id": "mbc",
+          "size": 10
+        }
+      },
+      "13:00:00": {
+        "31240": {
+          "event_id": 31240,
+          "open": 23,
+          "placeholder": false,
+          "session_id": "mbc",
+          "size": 15
+        }
+      },
+      "20:30:00": {
+        "31246": {
+          "event_id": 31246,
+          "open": -3,
+          "placeholder": false,
+          "session_id": "mbc",
+          "size": 37
+        }
+      }
+    },
+    "2021-03-03": {
+      "13:00:00": {
+        "31248": {
+          "event_id": 31248,
+          "open": 25,
+          "placeholder": false,
+          "session_id": "mbc",
+          "size": 17
+        }
+      },
+      "20:30:00": {
+        "31253": {
+          "event_id": 31253,
+          "open": -3,
+          "placeholder": false,
+          "session_id": "mbc",
+          "size": 37
+        }
+      }
+    },
+    "2021-03-04": {
+      "13:00:00": {
+        "31263": {
+          "event_id": 31263,
+          "open": 32,
+          "placeholder": false,
+          "session_id": "mbc",
+          "size": 10
+        }
+      },
+      "15:30:00": {
+        "31265": {
+          "event_id": 31265,
+          "open": 2,
+          "placeholder": false,
+          "session_id": "mbc",
+          "size": 30
+        }
+      }
+    },
+    "2021-03-05": {
+      "10:30:00": {
+        "31270": {
+          "event_id": 31270,
+          "open": 2,
+          "placeholder": false,
+          "session_id": "mbc",
+          "size": 10
+        }
+      },
+      "13:00:00": {
+        "31271": {
+          "event_id": 31271,
+          "open": 34,
+          "placeholder": false,
+          "session_id": "mbc",
+          "size": 2
+        }
+      }
+    },
+    "2021-03-06": {
+      "11:15:00": {
+        "31280": {
+          "event_id": 31280,
+          "open": 22,
+          "placeholder": false,
+          "session_id": "mbc",
+          "size": 18
+        }
+      },
+      "13:30:00": {
+        "31282": {
+          "event_id": 31282,
+          "open": 28,
+          "placeholder": false,
+          "session_id": "mbc",
+          "size": 12
+        }
+      },
+      "15:45:00": {
+        "31284": {
+          "event_id": 31284,
+          "open": 26,
+          "placeholder": false,
+          "session_id": "mbc",
+          "size": 14
+        }
+      },
+      "18:00:00": {
+        "31286": {
+          "event_id": 31286,
+          "open": 29,
+          "placeholder": false,
+          "session_id": "mbc",
+          "size": 11
+        }
+      },
+      "20:15:00": {
+        "31288": {
+          "event_id": 31288,
+          "open": 32,
+          "placeholder": false,
+          "session_id": "mbc",
+          "size": 8
+        }
+      }
+    },
+    "2021-03-07": {
+      "10:30:00": {
+        "31290": {
+          "event_id": 31290,
+          "open": 1,
+          "placeholder": false,
+          "session_id": "mbc",
+          "size": 35
+        }
+      },
+      "13:00:00": {
+        "31292": {
+          "event_id": 31292,
+          "open": 17,
+          "placeholder": false,
+          "session_id": "mbc",
+          "size": 19
+        }
+      },
+      "15:30:00": {
+        "31294": {
+          "event_id": 31294,
+          "open": 23,
+          "placeholder": false,
+          "session_id": "mbc",
+          "size": 13
+        }
+      },
+      "18:00:00": {
+        "31296": {
+          "event_id": 31296,
+          "open": 25,
+          "placeholder": false,
+          "session_id": "mbc",
+          "size": 11
+        }
+      },
+      "20:15:00": {
+        "31312": {
+          "event_id": 31312,
+          "open": 36,
+          "placeholder": false,
+          "session_id": "mbc",
+          "size": 0
+        }
+      }
+    }
+  },
+  "date": "2021-03",
+  "request": 1614105430113
+}
